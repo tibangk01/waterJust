@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsFactureLocataire" targetNamespace="http://tempuri.org/dsFactureLocataire.xsd" xmlns:mstns="http://tempuri.org/dsFactureLocataire.xsd" xmlns="http://tempuri.org/dsFactureLocataire.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsFactureLocataire" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsFactureLocataire" msprop:Generator_UserDSName="dsFactureLocataire">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FactureLocataire" msprop:Generator_TableClassName="FactureLocataireDataTable" msprop:Generator_TableVarName="tableFactureLocataire" msprop:Generator_TablePropName="FactureLocataire" msprop:Generator_RowDeletingName="FactureLocataireRowDeleting" msprop:Generator_RowChangingName="FactureLocataireRowChanging" msprop:Generator_RowEvHandlerName="FactureLocataireRowChangeEventHandler" msprop:Generator_RowDeletedName="FactureLocataireRowDeleted" msprop:Generator_UserTableName="FactureLocataire" msprop:Generator_RowChangedName="FactureLocataireRowChanged" msprop:Generator_RowEvArgName="FactureLocataireRowChangeEvent" msprop:Generator_RowClassName="FactureLocataireRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nomLocataire" msprop:nullValue="_null" msprop:Generator_ColumnPropNameInRow="nomLocataire" msprop:Generator_ColumnVarNameInTable="columnnomLocataire" msprop:Generator_ColumnPropNameInTable="nomLocataireColumn" msprop:Generator_UserColumnName="nomLocataire" type="xs:string" minOccurs="0" />
+              <xs:element name="ancienneDatePassage" msdata:DateTimeMode="Local" msprop:Generator_ColumnVarNameInTable="columnancienneDatePassage" msprop:Generator_ColumnPropNameInRow="ancienneDatePassage" msprop:Generator_ColumnPropNameInTable="ancienneDatePassageColumn" msprop:Generator_UserColumnName="ancienneDatePassage" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nouvelleDatePassage" msprop:Generator_ColumnVarNameInTable="columnnouvelleDatePassage" msprop:Generator_ColumnPropNameInRow="nouvelleDatePassage" msprop:Generator_ColumnPropNameInTable="nouvelleDatePassageColumn" msprop:Generator_UserColumnName="nouvelleDatePassage" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ancienIndex" msprop:Generator_ColumnVarNameInTable="columnancienIndex" msprop:Generator_ColumnPropNameInRow="ancienIndex" msprop:Generator_ColumnPropNameInTable="ancienIndexColumn" msprop:Generator_UserColumnName="ancienIndex" type="xs:int" minOccurs="0" />
+              <xs:element name="nouvelleIndex" msprop:Generator_ColumnVarNameInTable="columnnouvelleIndex" msprop:Generator_ColumnPropNameInRow="nouvelleIndex" msprop:Generator_ColumnPropNameInTable="nouvelleIndexColumn" msprop:Generator_UserColumnName="nouvelleIndex" type="xs:int" minOccurs="0" />
+              <xs:element name="locationCompt" msprop:Generator_ColumnVarNameInTable="columnlocationCompt" msprop:Generator_ColumnPropNameInRow="locationCompt" msprop:Generator_ColumnPropNameInTable="locationComptColumn" msprop:Generator_UserColumnName="locationCompt" type="xs:int" minOccurs="0" />
+              <xs:element name="nouvelIndexMoisProchain" msprop:Generator_ColumnVarNameInTable="columnnouvelIndexMoisProchain" msprop:Generator_ColumnPropNameInRow="nouvelIndexMoisProchain" msprop:Generator_ColumnPropNameInTable="nouvelIndexMoisProchainColumn" msprop:Generator_UserColumnName="nouvelIndexMoisProchain" type="xs:int" minOccurs="0" />
+              <xs:element name="datePassageReleveur" msprop:Generator_ColumnVarNameInTable="columndatePassageReleveur" msprop:Generator_ColumnPropNameInRow="datePassageReleveur" msprop:Generator_ColumnPropNameInTable="datePassageReleveurColumn" msprop:Generator_UserColumnName="datePassageReleveur" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="libMoisFacture" msprop:Generator_ColumnVarNameInTable="columnlibMoisFacture" msprop:Generator_ColumnPropNameInRow="libMoisFacture" msprop:Generator_ColumnPropNameInTable="libMoisFactureColumn" msprop:Generator_UserColumnName="libMoisFacture" type="xs:string" minOccurs="0" />
+              <xs:element name="rubriqueTranche" msprop:Generator_ColumnVarNameInTable="columnrubriqueTranche" msprop:Generator_ColumnPropNameInRow="rubriqueTranche" msprop:Generator_ColumnPropNameInTable="rubriqueTrancheColumn" msprop:Generator_UserColumnName="rubriqueTranche" type="xs:string" minOccurs="0" />
+              <xs:element name="prixUnitaire" msprop:Generator_ColumnVarNameInTable="columnprixUnitaire" msprop:Generator_ColumnPropNameInRow="prixUnitaire" msprop:Generator_ColumnPropNameInTable="prixUnitaireColumn" msprop:Generator_UserColumnName="prixUnitaire" type="xs:int" minOccurs="0" />
+              <xs:element name="aPayerAvant" msprop:Generator_ColumnVarNameInTable="columnaPayerAvant" msprop:Generator_ColumnPropNameInRow="aPayerAvant" msprop:Generator_ColumnPropNameInTable="aPayerAvantColumn" msprop:Generator_UserColumnName="aPayerAvant" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="nbJoursConso" msprop:Generator_ColumnVarNameInTable="columnnbJoursConso" msprop:Generator_ColumnPropNameInRow="nbJoursConso" msprop:Generator_ColumnPropNameInTable="nbJoursConsoColumn" msprop:Generator_UserColumnName="nbJoursConso" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

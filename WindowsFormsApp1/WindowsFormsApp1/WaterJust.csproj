@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BC2D382-D473-4632-905D-1218814E9B4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WaterJust</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>WindowsFormsApp1.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addMontant.cs" />
+    <Compile Include="ancienIndexSCEncoreNull.cs" />
+    <Compile Include="billTempVars.cs" />
+    <Compile Include="cbNouvelIndex.cs" />
+    <Compile Include="dbStr.cs" />
+    <Compile Include="GestionDesUtilisateurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionDesUtilisateurs.Designer.cs">
+      <DependentUpon>GestionDesUtilisateurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjouterUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterUtilisateur.Designer.cs">
+      <DependentUpon>AjouterUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnregistrerNouveauxIndexes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnregistrerNouveauxIndexes.Designer.cs">
+      <DependentUpon>EnregistrerNouveauxIndexes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FactureSpecifique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FactureSpecifique.Designer.cs">
+      <DependentUpon>FactureSpecifique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connexion.Designer.cs">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Impression.Designer.cs">
+      <DependentUpon>Impression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListeDesEtats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListeDesEtats.Designer.cs">
+      <DependentUpon>ListeDesEtats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierNouveauMontantFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierNouveauMontantFacture.Designer.cs">
+      <DependentUpon>modifierNouveauMontantFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifierNouvelIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modifierNouvelIndex.Designer.cs">
+      <DependentUpon>modifierNouvelIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierUtilisateur.Designer.cs">
+      <DependentUpon>ModifierUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifierVilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifierVilla.Designer.cs">
+      <DependentUpon>ModifierVilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="montantUpdateInfo.cs" />
+    <Compile Include="nouveauMontantFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nouveauMontantFacture.Designer.cs">
+      <DependentUpon>nouveauMontantFacture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NouveauReferencementVilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NouveauReferencementVilla.Designer.cs">
+      <DependentUpon>NouveauReferencementVilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="impressionFacturesMensuelles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="impressionFacturesMensuelles.Designer.cs">
+      <DependentUpon>impressionFacturesMensuelles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raports\uneFacture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>uneFacture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReferencementVilla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferencementVilla.Designer.cs">
+      <DependentUpon>ReferencementVilla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="refVillaInfo.cs" />
+    <Compile Include="refVillaUpdateInfo.cs" />
+    <Compile Include="SourceDeDonnees\dsFactureLocataire.cs">
+      <DependentUpon>dsFactureLocataire.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SourceDeDonnees\dsFactureLocataire.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFactureLocataire.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sousCompteursActifs.cs" />
+    <Compile Include="tabFactureMensuelle.cs" />
+    <Compile Include="tabNewInexNumSc.cs" />
+    <Compile Include="traiterImpayes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="traiterImpayes.Designer.cs">
+      <DependentUpon>traiterImpayes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userLogInfo.cs" />
+    <Compile Include="userUpdateInfo.cs" />
+    <Compile Include="validationFacture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="validationFacture.Designer.cs">
+      <DependentUpon>validationFacture.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GestionDesUtilisateurs.resx">
+      <DependentUpon>GestionDesUtilisateurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjouterUtilisateur.resx">
+      <DependentUpon>AjouterUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnregistrerNouveauxIndexes.resx">
+      <DependentUpon>EnregistrerNouveauxIndexes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FactureSpecifique.resx">
+      <DependentUpon>FactureSpecifique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connexion.resx">
+      <DependentUpon>Connexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Impression.resx">
+      <DependentUpon>Impression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListeDesEtats.resx">
+      <DependentUpon>ListeDesEtats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifierNouveauMontantFacture.resx">
+      <DependentUpon>modifierNouveauMontantFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifierNouvelIndex.resx">
+      <DependentUpon>modifierNouvelIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierUtilisateur.resx">
+      <DependentUpon>ModifierUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifierVilla.resx">
+      <DependentUpon>ModifierVilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nouveauMontantFacture.resx">
+      <DependentUpon>nouveauMontantFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NouveauReferencementVilla.resx">
+      <DependentUpon>NouveauReferencementVilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="impressionFacturesMensuelles.resx">
+      <DependentUpon>impressionFacturesMensuelles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Raports\uneFacture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>uneFacture.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferencementVilla.resx">
+      <DependentUpon>ReferencementVilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="traiterImpayes.resx">
+      <DependentUpon>traiterImpayes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="validationFacture.resx">
+      <DependentUpon>validationFacture.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SourceDeDonnees\dsFactureLocataire.xsc">
+      <DependentUpon>dsFactureLocataire.xsd</DependentUpon>
+    </None>
+    <None Include="SourceDeDonnees\dsFactureLocataire.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFactureLocataire.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="SourceDeDonnees\dsFactureLocataire.xss">
+      <DependentUpon>dsFactureLocataire.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\validation_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins_64px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
